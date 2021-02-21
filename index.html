@@ -473,11 +473,12 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 0 0;
+        float: left;
       }
       @media (min-width: 1024px) {
         .epc_comidasDeco {
           width: 96px;
-          height: 400px;
+          height: 600px;
           margin: 72px 80px 0 0;
         }
       }
@@ -503,6 +504,31 @@
       @media (min-width: 1024px) {
         .epc_comidasDecoPicaPica {
           background-image: url(./assets/Logos/picapica.svg);
+        }
+      }
+      .epc_horarioDesayuno {
+        color: #5b89b4;
+      }
+      .epc_horarioAlmuerzo {
+        color: #b3c2bb;
+      }
+      .epc_horarioPicaPica {
+        color: #333333;
+      }
+      .epc_mb48-80 {
+        margin-bottom: 48px;
+      }
+      @media (min-width: 1024px) {
+        .epc_mb48-80 {
+          margin-bottom: 80px;
+        }
+      }
+      .epc_comidasDesc {
+        margin: 0 40px 48px 40px;
+      }
+      @media (min-width: 1024px) {
+        .epc_comidasDesc {
+          margin: 72px 0 160px 0;
         }
       }
     </style>
@@ -625,25 +651,57 @@
           </p>
         </div>
       </div>
-      <div class="epc_comidasWrapper">
+      <div class="epc_comidasWrapper epc_clearfix">
         <div class="epc_comidasDeco epc_comidasDecoDesayuno"></div>
-        <div class="epc_cartasDesc epc_cartasDescDesayuno">
-          <h2 class="epc_heading2 epc_mb48-80"></h2>
-          <p class="epc_paragraph"></p>
+        <div class="epc_comidasDesc epc_comidasDescDesayuno">
+          <h2 class="epc_heading2 epc_mb48-80">
+            CADA DÍA MADRUGAMOS CON MUCHO GUSTO PARA QUE PUEDAS DISFRUTAR DE UN
+            DESAYUNO RECIÉN AMASADO Y HORNEADO.
+          </h2>
+          <p class="epc_paragraph epc_horarioDesayuno">DE 10.00 a 12.30.</p>
+          <p class="epc_paragraph">
+            Puedes encontrar bizcocho de limón, de aguacate con chocolate, roll
+            de canela, crumble de manzana, palmeritas caseras, tostada con
+            salmón y queso crema, tostada con aguacate aceite sésamo, tostada
+            con jamón serrano... Y algún dulce nuevo que se nos ocurra.
+          </p>
         </div>
       </div>
       <div class="epc_comidasWrapper epc_clearfix">
         <div class="epc_comidasDeco epc_comidasDecoAlmuerzo"></div>
-        <div class="epc_cartasDesc epc_cartasDescAlmuerzo">
-          <h2 class="epc_heading2 epc_mb48-80"></h2>
-          <p class="epc_paragraph"></p>
+        <div class="epc_comidasDesc epc_comidasDescAlmuerzo">
+          <h2 class="epc_heading2 epc_mb48-80">
+            MENÚ DEL DÍA Y COSITAS RICAS PARA COMPARTIR O PARA COMER SOLO.
+          </h2>
+          <p class="epc_paragraph epc_horarioAlmuerzo">DE 1.30 a 4.00.</p>
+          <p class="epc_paragraph">
+            Cada día encontrarás un menú del día distinto, compuesto por tres
+            primeros y dos segundos que incluye pan, bebida y postre o café por
+            10,50€. Cremas y cuchareo para el invierno, ensaladas ricas y
+            frescas para el verano. Recetas caseras hechas con amor y algún
+            viaje a otras cocinas del mundo. Nunca repetimos menús para que
+            puedas venir a comer con nosotros todos los días sin aburrirte.
+          </p>
+          <p class="epc_paragraph">
+            Nos encantan las verduras y siempre tenemos una plato vegetariano.Y
+            además, cosas como hummus con pita, cracker de pipas con pollo al
+            curry, chapata de jamón, mixto trufado...
+          </p>
         </div>
       </div>
       <div class="epc_comidasWrapper epc_clearfix">
         <div class="epc_comidasDeco epc_comidasDecoPicaPica"></div>
-        <div class="epc_cartasDesc epc_cartasDescPicaPica">
-          <h2 class="epc_heading2 epc_mb48-80"></h2>
-          <p class="epc_paragraph"></p>
+        <div class="epc_comidasDesc epc_comidasDescPicaPica">
+          <h2 class="epc_heading2 epc_mb48-80">
+            DESDE QUE ABRIMOS HASTA QUE CERRAMOS, COSITAS RICAS EN BUENA
+            COMPAÑÍA.
+          </h2>
+          <p class="epc_paragraph epc_horarioPicaPica">DE 12.30 A 21.00.</p>
+          <p class="epc_paragraph">
+            Nuestra carta continua. De dulce y salado. Siempre que vengas
+            encontrarás tartas, brownie, crumble, tostadas, sandwiches... además
+            de unos cafés deliciosos.
+          </p>
         </div>
       </div>
     </main>
