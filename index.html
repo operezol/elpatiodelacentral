@@ -236,14 +236,18 @@
           transform: translate(-50%, 50%);
         }
       }
+      .epc_clearfix:before,
+      .epc_clearfix:after,
       .epc_mobileBreak:before,
       .epc_mobileBreak:after {
         content: "";
         display: table;
       }
+      .epc_clearfix:after,
       .epc_mobileBreak:after {
         clear: both;
       }
+      .epc_clearfix,
       .epc_mobileBreak {
         zoom: 1;
       }
@@ -485,6 +489,22 @@
           background-image: url(./assets/Logos/desayuno.svg);
         }
       }
+      .epc_comidasDecoAlmuerzo {
+        background-image: url(./assets/Logos/almuerzoMobile.svg);
+      }
+      @media (min-width: 1024px) {
+        .epc_comidasDecoAlmuerzo {
+          background-image: url(./assets/Logos/almuerzo.svg);
+        }
+      }
+      .epc_comidasDecoPicaPica {
+        background-image: url(./assets/Logos/picapicaMobile.svg);
+      }
+      @media (min-width: 1024px) {
+        .epc_comidasDecoPicaPica {
+          background-image: url(./assets/Logos/picapica.svg);
+        }
+      }
     </style>
   </head>
   <body>
@@ -585,7 +605,7 @@
         class="epc_instagramMobile"
         >>>> más en instagram</a
       >
-      <div class="epc_cartasWrapper">
+      <div class="epc_cartasWrapper epc_clearfix">
         <div class="epc_cartasDeco"></div>
         <div class="epc_cartasDesc">
           <h2 class="epc_heading2 epc_mb48">tres cartas</h2>
@@ -612,16 +632,16 @@
           <p class="epc_paragraph"></p>
         </div>
       </div>
-      <div class="epc_comidasWrapper">
-        <div class="epc_comidasDeco epc_comidasDecoDesayuno"></div>
-        <div class="epc_cartasDesc epc_cartasDescDesayuno">
+      <div class="epc_comidasWrapper epc_clearfix">
+        <div class="epc_comidasDeco epc_comidasDecoAlmuerzo"></div>
+        <div class="epc_cartasDesc epc_cartasDescAlmuerzo">
           <h2 class="epc_heading2 epc_mb48-80"></h2>
           <p class="epc_paragraph"></p>
         </div>
       </div>
-      <div class="epc_comidasWrapper">
-        <div class="epc_comidasDeco epc_comidasDecoDesayuno"></div>
-        <div class="epc_cartasDesc epc_cartasDescDesayuno">
+      <div class="epc_comidasWrapper epc_clearfix">
+        <div class="epc_comidasDeco epc_comidasDecoPicaPica"></div>
+        <div class="epc_cartasDesc epc_cartasDescPicaPica">
           <h2 class="epc_heading2 epc_mb48-80"></h2>
           <p class="epc_paragraph"></p>
         </div>
