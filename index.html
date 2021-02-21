@@ -1,12 +1,657 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-       "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-  <meta http-equiv="Refresh" content="0;url=defaultsite" />
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="pragma" content="no-cache" />
-  <!-- ES -->
-</head>
-<body>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El patio de la central</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video,
+      main,
+      img,
+      picture {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        box-sizing: border-box;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      body {
+        background-image: url(./assets/BG/BG_Marbling_Texture_Reflejo_medium.jpg);
+        font-family: "Inconsolata", monospace;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+      }
+      .epc_header {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+      }
+      .epc_header_1 {
+        background-image: url(./assets/img/Header/Img_Header_01.jpg);
+      }
+      .epc_header_2 {
+        background-image: url(./assets/img/Header/Img_Header_02.jpg);
+      }
+      .epc_header_3 {
+        background-image: url(./assets/img/Header/Img_Header_03.jpg);
+      }
+      .epc_header_4 {
+        background-image: url(./assets/img/Header/Img_Header_04.jpg);
+      }
+      .epc_header_5 {
+        background-image: url(./assets/img/Header/x2/Img_Header_01_@2.jpg);
+      }
+      @media (min-width: 1920px) {
+        .epc_header_1 {
+          background-image: url(./assets/img/Header/x2/Img_Header_01_@2.jpg);
+        }
+        .epc_header_2 {
+          background-image: url(./assets/img/Header/x2/Img_Header_02_@2.jpg);
+        }
+        .epc_header_3 {
+          background-image: url(./assets/img/Header/x2/Img_Header_03_@2.jpg);
+        }
+        .epc_header_4 {
+          background-image: url(./assets/img/Header/x2/Img_Header_04_@2.jpg);
+        }
+        .epc_header_5 {
+          background-image: url(./assets/img/Header/x2/Img_Header_05_@2.jpg);
+        }
+      }
+      .epc_elPatioLogo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        height: 72px;
+        width: 216px;
+        background-image: url(./assets/Logos/elPatioLogoMobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      @media (min-width: 1024px) {
+        .epc_elPatioLogo {
+          top: 80px;
+          left: 80px;
+          width: 96px;
+          height: 256px;
+          background-image: url(./assets/Logos/elPatioLogo.svg);
+        }
+      }
+      h1 {
+        font-size: 32px;
+        line-height: 42px;
+        color: white;
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+      }
+      @media (min-width: 1024px) {
+        h1 {
+          font-size: 72px;
+          line-height: 72px;
+          text-align: center;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 800;
+          left: 50%;
+          bottom: 50%;
+          transform: translate(-50%, 50%);
+        }
+      }
+      .epc_mobileBreak:before,
+      .epc_mobileBreak:after {
+        content: "";
+        display: table;
+      }
+      .epc_mobileBreak:after {
+        clear: both;
+      }
+      .epc_mobileBreak {
+        zoom: 1;
+      }
+      @media (min-width: 1024px) {
+        .epc_mobileBreak:before,
+        .epc_mobileBreak:after {
+          content: "";
+          display: inline;
+        }
+        .epc_mobileBreak:after {
+          clear: none;
+        }
+        .epc_mobileBreak {
+          zoom: 0;
+        }
+        .epc_desktopBreak:before,
+        .epc_desktopBreak:after {
+          content: "";
+          display: table;
+        }
+        .epc_desktopBreak:after {
+          clear: both;
+        }
+        .epc_desktopBreak {
+          zoom: 1;
+        }
+      }
+      .epc_main {
+        margin: 0;
+        background-color: white;
+        float: left;
+        width: 100%;
+      }
+      @media (min-width: 1024px) {
+        .epc_main {
+          margin: 0 80px;
+          width: calc(100% - 160px);
+        }
+      }
+      .epc_monograma {
+        width: 96px;
+        height: 96px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./assets/Logos/monograma.svg);
+        margin: 80px auto 40px 40px;
+      }
+      @media (min-width: 1024px) {
+        .epc_monograma {
+          float: none;
+          width: 180px;
+          height: 180px;
+          margin: 180px auto 96px auto;
+        }
+      }
+      .epc_heading2 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
+        color: #2e4057;
+        text-transform: uppercase;
+      }
+      .epc_monogramHeading {
+        margin: 40px;
+      }
+      @media (min-width: 1024px) {
+        .epc_heading2 {
+          font-size: 48px;
+          line-height: 56px;
+        }
+        .epc_desktopCentered {
+          width: 640px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .epc_monogramHeading {
+          margin: 96px auto;
+        }
+      }
+      .epc_gallery {
+        margin: 80px 0 0 0;
+        overflow: hidden;
+        position: relative;
+      }
+      @media (min-width: 1024px) {
+        .epc_gallery {
+          margin: 192px 80px 80px 80px;
+        }
+      }
+      .epc_arrow {
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+      .epc_arrowLeft {
+        left: 50px;
+      }
+      .epc_arrowRight {
+        right: 50px;
+      }
+      .epc_galleryInner {
+        width: 600%;
+        position: relative;
+        left: 0;
+        transition: all 1s ease-in-out;
+      }
+      .epc_galleryInner img {
+        width: calc(100% / 6);
+      }
+      img {
+        max-width: 100%;
+      }
+      .epc_galleryInner img {
+        float: left;
+      }
+      .epc_instagramMobile {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 56px auto 56px 40px;
+        display: block;
+      }
+      @media (min-width: 1024px) {
+        .epc_instagramMobile {
+          display: none;
+        }
+      }
+      .epc_cartasWrapper {
+        background-image: url(./assets/BG/BG_Mobile_Marmol.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100% 24px;
+        padding-top: 24px;
+        float: left;
+      }
+      @media (min-width: 1024px) {
+        .epc_cartasWrapper {
+          background-image: none;
+          width: 980px;
+          margin: 0 auto;
+          float: none;
+        }
+      }
+      .epc_cartasDeco {
+        background-image: url(./assets/amapolas.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 275px;
+        width: 180px;
+        float: right;
+        clear: both;
+        margin-right: 20px;
+        margin-top: 48px;
+      }
+      @media (min-width: 1024px) {
+        .epc_cartasDeco {
+          width: 420px;
+          height: 641px;
+          float: left;
+          clear: none;
+          margin-right: 80px;
+          margin-top: 0px;
+        }
+      }
+      .epc_cartasDesc {
+        margin: -40px 40px 80px 40px;
+        float: left;
+      }
+      @media (min-width: 1024px) {
+        .epc_cartasDesc {
+          margin: 0;
+          width: 480px;
+        }
+      }
+      .epc_mb48 {
+        margin-bottom: 48px;
+      }
+      .epc_paragraph {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        color: #333333;
+        margin-bottom: 22px;
+      }
+      @media (min-width: 1024px) {
+        .epc_paragraph {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 26px;
+        }
+      }
+      .epc_comidasWrapper {
+        background-image: url(./assets/BG/BG_Mobile_Marmol.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100% 24px;
+        padding-top: 24px;
+        float: left;
+        width: 100%;
+      }
+      @media (min-width: 1024px) {
+        .epc_comidasWrapper {
+          background-image: none;
+          width: 896px;
+          margin: 0 auto;
+          float: none;
+        }
+      }
+      .epc_comidasDeco {
+        height: 72px;
+        width: 100%;
+        margin: 80px 40px 48px 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+      @media (min-width: 1024px) {
+        .epc_comidasDeco {
+          width: 96px;
+          height: 400px;
+          margin: 72px 80px 0 0;
+        }
+      }
+      .epc_comidasDecoDesayuno {
+        background-image: url(./assets/Logos/desayunoMobile.svg);
+      }
+      @media (min-width: 1024px) {
+        .epc_comidasDecoDesayuno {
+          background-image: url(./assets/Logos/desayuno.svg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="epc_header" class="epc_header epc_header_1">
+      <div class="epc_elPatioLogo"></div>
+      <h1>
+        Bienvenidos<span class="epc_mobileBreak"></span> a<span
+          class="epc_desktopBreak"
+        ></span>
+        El Patio<span class="epc_mobileBreak"></span> de la<span
+          class="epc_desktopBreak"
+        ></span>
+        Central
+      </h1>
+    </header>
+    <main class="epc_main">
+      <div class="epc_monograma"></div>
+      <h2 class="epc_heading2 epc_desktopCentered epc_monogramHeading">
+        en el patio de la central estamos de lunes a domingo.
+      </h2>
+      <h2 class="epc_heading2 epc_desktopCentered epc_monogramHeading">
+        poniendo cosas ricas que hacemos nosotros.
+      </h2>
+      <div class="epc_gallery">
+        <div class="epc_galleryInner" id="epc_galleryInner">
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcset="./assets/img/gallery/gallery1.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/img/gallery/gallery1x2.jpg"
+            />
+            <img src="./assets/img/gallery/gallery1.jpg" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcset="./assets/img/gallery/gallery2.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/img/gallery/gallery2x2.jpg"
+            />
+            <img src="./assets/img/gallery/gallery2.jpg" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcset="./assets/img/gallery/gallery3.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/img/gallery/gallery3x2.jpg"
+            />
+            <img src="./assets/img/gallery/gallery3.jpg" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcset="./assets/img/gallery/gallery4.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/img/gallery/gallery4x2.jpg"
+            />
+            <img src="./assets/img/gallery/gallery4.jpg" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcset="./assets/img/gallery/gallery5.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/img/gallery/gallery5x2.jpg"
+            />
+            <img src="./assets/img/gallery/gallery5.jpg" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcset="./assets/img/gallery/gallery6.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/img/gallery/gallery6x2.jpg"
+            />
+            <img src="./assets/img/gallery/gallery6.jpg" />
+          </picture>
+        </div>
+        <div class="epc_arrow epc_arrowLeft" id="epc_arrowLeft"><</div>
+        <div class="epc_arrow epc_arrowRight" id="epc_arrowRight">></div>
+      </div>
+      <a
+        href="https://www.instagram.com/elpatiodelacentral/"
+        class="epc_instagramMobile"
+        >>>> más en instagram</a
+      >
+      <div class="epc_cartasWrapper">
+        <div class="epc_cartasDeco"></div>
+        <div class="epc_cartasDesc">
+          <h2 class="epc_heading2 epc_mb48">tres cartas</h2>
+          <p class="epc_paragraph">
+            Desayunos ricos con pan de masa madre, dulces caseros, café y zumito
+            natural. De 10.00 a 12.30.
+          </p>
+          <p class="epc_paragraph">
+            Menú del día desde las 13.30 a las 16.00, de lunes a domingo. Rico,
+            casero y sano. Siempre con algún plato vegetariano. Comida
+            mediterránea hecha con amor y producto de temporada.
+          </p>
+          <p class="epc_paragraph">
+            Carta continua para poder picar algo dulce o salado durante todo el
+            día. Quesadillas, hummus, tartas, sándwiches y más cosas ricas. Y
+            los domingos BRUNCH de 11.00 a 14.00.
+          </p>
+        </div>
+      </div>
+      <div class="epc_comidasWrapper">
+        <div class="epc_comidasDeco epc_comidasDecoDesayuno"></div>
+        <div class="epc_cartasDesc epc_cartasDescDesayuno">
+          <h2 class="epc_heading2 epc_mb48-80"></h2>
+          <p class="epc_paragraph"></p>
+        </div>
+      </div>
+      <div class="epc_comidasWrapper">
+        <div class="epc_comidasDeco epc_comidasDecoDesayuno"></div>
+        <div class="epc_cartasDesc epc_cartasDescDesayuno">
+          <h2 class="epc_heading2 epc_mb48-80"></h2>
+          <p class="epc_paragraph"></p>
+        </div>
+      </div>
+      <div class="epc_comidasWrapper">
+        <div class="epc_comidasDeco epc_comidasDecoDesayuno"></div>
+        <div class="epc_cartasDesc epc_cartasDescDesayuno">
+          <h2 class="epc_heading2 epc_mb48-80"></h2>
+          <p class="epc_paragraph"></p>
+        </div>
+      </div>
+    </main>
+    <script>
+      let slide = 1;
+      window.setInterval(() => {
+        let oldslide = slide;
+        slide < 5 ? slide++ : (slide = 1);
+        document
+          .querySelector("#epc_header")
+          .classList.replace(`epc_header_${oldslide}`, `epc_header_${slide}`);
+      }, 2000);
+      let galleryItem = 0;
+      document.querySelector("#epc_arrowLeft").addEventListener("click", () => {
+        galleryItem > 1 ? galleryItem-- : (galleryItem = 8);
+        setGalleryItem();
+      });
+      document
+        .querySelector("#epc_arrowRight")
+        .addEventListener("click", () => {
+          galleryItem < 5 ? galleryItem++ : (galleryItem = 1);
+          setGalleryItem();
+        });
+      const setGalleryItem = () => {
+        document.querySelector("#epc_galleryInner").style.left = `${
+          galleryItem * -100
+        }%`;
+      };
+    </script>
+  </body>
 </html>
