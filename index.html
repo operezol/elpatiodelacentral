@@ -315,6 +315,23 @@
         color: #2e4057;
         text-transform: uppercase;
       }
+      .epc_heading3 {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #2e4057;
+      }
+      @media (min-width: 1024px) {
+        .epc_heading3 {
+          font-size: 32px;
+          line-height: 46px;
+          text-align: right;
+        }
+      }
       .epc_monogramHeading {
         margin: 40px;
       }
@@ -324,7 +341,7 @@
           line-height: 56px;
         }
         .epc_desktopCentered {
-          width: 640px;
+          max-width: 640px;
           text-align: center;
           margin-left: auto;
           margin-right: auto;
@@ -394,14 +411,19 @@
         background-repeat: no-repeat;
         background-size: 100% 24px;
         padding-top: 24px;
+        padding-left: 40px;
+        padding-right: 40px;
+
         float: left;
       }
       @media (min-width: 1024px) {
         .epc_cartasWrapper {
           background-image: none;
-          width: 980px;
+          max-width: 980px;
           margin: 0 auto;
           float: none;
+          padding-left: 80px;
+          padding-right: 80px;
         }
       }
       .epc_cartasDeco {
@@ -412,27 +434,27 @@
         width: 180px;
         float: right;
         clear: both;
-        margin-right: 20px;
-        margin-top: 48px;
+        margin-right: -30px;
+        margin-top: 88px;
       }
       @media (min-width: 1024px) {
         .epc_cartasDeco {
-          width: 420px;
+          max-width: 420px;
           height: 641px;
           float: left;
           clear: none;
           margin-right: 80px;
-          margin-top: 0px;
+          margin-top: 40px;
         }
       }
       .epc_cartasDesc {
-        margin: -40px 40px 80px 40px;
+        margin: -40px 0 80px 0;
         float: left;
       }
       @media (min-width: 1024px) {
         .epc_cartasDesc {
           margin: 0;
-          width: 480px;
+          max-width: 480px;
         }
       }
       .epc_mb48 {
@@ -462,13 +484,17 @@
         padding-top: 24px;
         float: left;
         width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
       }
       @media (min-width: 1024px) {
         .epc_comidasWrapper {
           background-image: none;
-          width: 896px;
+          max-width: 896px;
           margin: 0 auto;
           float: none;
+          padding-left: 80px;
+          padding-right: 80px;
         }
       }
       .epc_comidasDeco {
@@ -483,7 +509,7 @@
       @media (min-width: 1024px) {
         .epc_comidasDeco {
           width: 96px;
-          height: 600px;
+          height: 700px;
           margin: 72px 80px 0 0;
         }
       }
@@ -529,7 +555,7 @@
         }
       }
       .epc_comidasDesc {
-        margin: 0 40px 48px 40px;
+        margin: 0 0 48px 0;
       }
       @media (min-width: 1024px) {
         .epc_comidasDesc {
@@ -565,8 +591,6 @@
         float: left;
         width: calc(100% - 80px);
       }
-      .epc_address {
-      }
       .epc_map {
         background-image: url(./img/mapa/mapa.svg);
         background-position: center;
@@ -591,6 +615,10 @@
           width: 50%;
           padding-right: 80px;
         }
+        .epc_address h3 {
+          text-align: right;
+        }
+
         .epc_map {
           float: right;
           height: calc(50% - 6px);
@@ -830,9 +858,9 @@
       </div>
       <div class="epc_eventos">
         <div class="epc_eventosInner">
-          <h2 class="epc_heading2 epc_mb48">
+          <h3 class="epc_heading3 epc_mb48">
             SI TIENES QUE CELEBRAR ALGÚN EVENTO PUEDES ESCRIBIRNOS A:
-          </h2>
+          </h3>
           <a href="eventosEN@elpatiodelacentral.es" class="epc_paragraph">
             eventosEN@elpatiodelacentral.es
           </a>
@@ -841,11 +869,11 @@
       <div class="epc_localizacion">
         <div class="epc_map"></div>
         <address class="epc_address">
-          <h2 class="epc_heading2 epc_mb48-0">
+          <h3 class="epc_heading3 epc_mb48-0">
             ESTAMOS EN Calle Postigo de San Martín 8.
-          </h2>
-          <h2 class="epc_heading2 epc_mb48-0">en la central de callao.</h2>
-          <h2 class="epc_heading2 epc_mb48-0">en el patio :)</h2>
+          </h3>
+          <h3 class="epc_heading3 epc_mb48-0">en la central de callao.</h3>
+          <h3 class="epc_heading3 epc_mb48-0">en el patio :)</h3>
         </address>
       </div>
       <a
@@ -875,7 +903,7 @@
         document
           .querySelector("#epc_header")
           .classList.replace(`epc_header_${oldslide}`, `epc_header_${slide}`);
-      }, 2000);
+      }, 4000);
       let galleryItem = 0;
       document.querySelector("#epc_arrowLeft").addEventListener("click", () => {
         galleryItem > 1 ? galleryItem-- : (galleryItem = 8);
