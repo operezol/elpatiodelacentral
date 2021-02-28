@@ -141,11 +141,15 @@
         border-spacing: 0;
       }
       body {
-        background-image: url(./assets/BG/BG_Marbling_Texture_Reflejo_medium.jpg);
+        background-image: url(./img/background/background.jpg);
         font-family: "Inconsolata", monospace;
         font-weight: 400;
         text-transform: uppercase;
       }
+      * {
+        box-sizing: border-box;
+      }
+
       h1,
       h2,
       h3,
@@ -165,35 +169,35 @@
         position: relative;
       }
       .epc_header_1 {
-        background-image: url(./assets/img/Header/Img_Header_01.jpg);
+        background-image: url(./img/header/header1.jpg);
       }
       .epc_header_2 {
-        background-image: url(./assets/img/Header/Img_Header_02.jpg);
+        background-image: url(./img/header/header2.jpg);
       }
       .epc_header_3 {
-        background-image: url(./assets/img/Header/Img_Header_03.jpg);
+        background-image: url(./img/header/header3.jpg);
       }
       .epc_header_4 {
-        background-image: url(./assets/img/Header/Img_Header_04.jpg);
+        background-image: url(./img/header/header4.jpg);
       }
       .epc_header_5 {
-        background-image: url(./assets/img/Header/x2/Img_Header_01_@2.jpg);
+        background-image: url(./img/header/header5.jpg);
       }
       @media (min-width: 1920px) {
         .epc_header_1 {
-          background-image: url(./assets/img/Header/x2/Img_Header_01_@2.jpg);
+          background-image: url(./img/header/header5x2.jpg);
         }
         .epc_header_2 {
-          background-image: url(./assets/img/Header/x2/Img_Header_02_@2.jpg);
+          background-image: url(./img/header/header2x2.jpg);
         }
         .epc_header_3 {
-          background-image: url(./assets/img/Header/x2/Img_Header_03_@2.jpg);
+          background-image: url(./img/header/header3x2.jpg);
         }
         .epc_header_4 {
-          background-image: url(./assets/img/Header/x2/Img_Header_04_@2.jpg);
+          background-image: url(./img/header/header4x2.jpg);
         }
         .epc_header_5 {
-          background-image: url(./assets/img/Header/x2/Img_Header_05_@2.jpg);
+          background-image: url(./img/header/header5x2.jpg);
         }
       }
       .epc_elPatioLogo {
@@ -202,7 +206,7 @@
         left: 40px;
         height: 72px;
         width: 216px;
-        background-image: url(./assets/Logos/elPatioLogoMobile.svg);
+        background-image: url(./img/logos/elPatioLogoMobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
       }
@@ -212,7 +216,7 @@
           left: 80px;
           width: 96px;
           height: 256px;
-          background-image: url(./assets/Logos/elPatioLogo.svg);
+          background-image: url(./img/logos/elPatioLogo.svg);
         }
       }
       h1 {
@@ -280,6 +284,7 @@
         background-color: white;
         float: left;
         width: 100%;
+        overflow: hidden;
       }
       @media (min-width: 1024px) {
         .epc_main {
@@ -292,7 +297,7 @@
         height: 96px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url(./assets/Logos/monograma.svg);
+        background-image: url(./img/logos/monograma.svg);
         margin: 80px auto 40px 40px;
       }
       @media (min-width: 1024px) {
@@ -384,7 +389,7 @@
         }
       }
       .epc_cartasWrapper {
-        background-image: url(./assets/BG/BG_Mobile_Marmol.jpg);
+        background-image: url(./img/background/backgroundMobile.jpg);
         background-position: top;
         background-repeat: no-repeat;
         background-size: 100% 24px;
@@ -400,7 +405,7 @@
         }
       }
       .epc_cartasDeco {
-        background-image: url(./assets/amapolas.png);
+        background-image: url(./img/amapolas.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: 275px;
@@ -450,7 +455,7 @@
         }
       }
       .epc_comidasWrapper {
-        background-image: url(./assets/BG/BG_Mobile_Marmol.jpg);
+        background-image: url(./img/background/backgroundMobile.jpg);
         background-position: top;
         background-repeat: no-repeat;
         background-size: 100% 24px;
@@ -483,27 +488,27 @@
         }
       }
       .epc_comidasDecoDesayuno {
-        background-image: url(./assets/Logos/desayunoMobile.svg);
+        background-image: url(./img/logos/desayunoMobile.svg);
       }
       @media (min-width: 1024px) {
         .epc_comidasDecoDesayuno {
-          background-image: url(./assets/Logos/desayuno.svg);
+          background-image: url(./img/logos/desayuno.svg);
         }
       }
       .epc_comidasDecoAlmuerzo {
-        background-image: url(./assets/Logos/almuerzoMobile.svg);
+        background-image: url(./img/logos/almuerzoMobile.svg);
       }
       @media (min-width: 1024px) {
         .epc_comidasDecoAlmuerzo {
-          background-image: url(./assets/Logos/almuerzo.svg);
+          background-image: url(./img/logos/almuerzo.svg);
         }
       }
       .epc_comidasDecoPicaPica {
-        background-image: url(./assets/Logos/picapicaMobile.svg);
+        background-image: url(./img/logos/picapicaMobile.svg);
       }
       @media (min-width: 1024px) {
         .epc_comidasDecoPicaPica {
-          background-image: url(./assets/Logos/picapica.svg);
+          background-image: url(./img/logos/picapica.svg);
         }
       }
       .epc_horarioDesayuno {
@@ -528,7 +533,126 @@
       }
       @media (min-width: 1024px) {
         .epc_comidasDesc {
-          margin: 72px 0 160px 0;
+          margin: 72px 0 180px 0;
+        }
+      }
+      .epc_eventos {
+        float: left;
+        width: 100%;
+        margin: 80px 0 80px;
+        padding: 40px;
+        background-image: url(./img/events/events.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 360px;
+      }
+      @media (min-width: 1024px) {
+        .epc_eventos {
+          margin: 0 80px 160px;
+          padding: 150px 0;
+          width: calc(100% - 160px);
+          background-image: url(./img/events/eventsx2.png);
+        }
+        .epc_eventosInner {
+          width: 640px;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+      .epc_localizacion {
+        margin: 80px 40px 80px;
+        float: left;
+        width: calc(100% - 80px);
+      }
+      .epc_address {
+      }
+      .epc_map {
+        background-image: url(./img/mapa/mapa.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: calc(50% - 8px);
+        border: 4px solid #5b89b4;
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: 1024px) {
+        .epc_localizacion {
+          margin: 0 80px 80px;
+          padding: 0 96px;
+          width: calc(100% - 160px);
+        }
+        .epc_address {
+          float: left;
+          width: 50%;
+          padding-right: 80px;
+        }
+        .epc_map {
+          float: right;
+          height: calc(50% - 6px);
+          width: calc(50% - 6px);
+          padding: calc(25% - 6px);
+          border: 0;
+          border-left: 3px solid #5b89b4;
+        }
+      }
+      .epc_mb48-0 {
+        margin-bottom: 0px;
+      }
+      @media (min-width: 1024px) {
+        .epc_mb48-0 {
+          margin-bottom: 48px;
+        }
+      }
+      .epc_desktopInstagram {
+        display: none;
+      }
+      @media (min-width: 1024px) {
+        .epc_desktopInstagram {
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          margin: 96px auto;
+        }
+      }
+      .epc_footer {
+        height: 112px;
+        background-color: #2e4057;
+        float: left;
+        width: 100%;
+      }
+      @media (min-width: 1024px) {
+        .epc_footer {
+          height: 200px;
+        }
+      }
+      .epc_instagramFooter {
+        float: left;
+        margin: 44px;
+      }
+      .epc_instagramFooter img {
+        width: 24px;
+      }
+      @media (min-width: 1024px) {
+        .epc_instagramFooter {
+          display: none;
+        }
+      }
+      .epc_monogramaBlanco {
+        width: 64px;
+        float: right;
+        margin: 24px;
+      }
+      @media (min-width: 1024px) {
+        .epc_monogramaBlanco {
+          width: 120px;
+          margin: 40px auto;
+          float: none;
+          display: block;
         }
       }
     </style>
@@ -559,68 +683,68 @@
           <picture>
             <source
               media="(max-width: 1023px)"
-              srcset="./assets/img/gallery/gallery1.jpg"
+              srcset="./img/gallery/gallery1.jpg"
             />
             <source
               media="(min-width: 1024px)"
-              srcset="./assets/img/gallery/gallery1x2.jpg"
+              srcset="./img/gallery/gallery1x2.jpg"
             />
-            <img src="./assets/img/gallery/gallery1.jpg" />
+            <img src="./img/gallery/gallery1.jpg" />
           </picture>
           <picture>
             <source
               media="(max-width: 1023px)"
-              srcset="./assets/img/gallery/gallery2.jpg"
+              srcset="./img/gallery/gallery2.jpg"
             />
             <source
               media="(min-width: 1024px)"
-              srcset="./assets/img/gallery/gallery2x2.jpg"
+              srcset="./img/gallery/gallery2x2.jpg"
             />
-            <img src="./assets/img/gallery/gallery2.jpg" />
+            <img src="./img/gallery/gallery2.jpg" />
           </picture>
           <picture>
             <source
               media="(max-width: 1023px)"
-              srcset="./assets/img/gallery/gallery3.jpg"
+              srcset="./img/gallery/gallery3.jpg"
             />
             <source
               media="(min-width: 1024px)"
-              srcset="./assets/img/gallery/gallery3x2.jpg"
+              srcset="./img/gallery/gallery3x2.jpg"
             />
-            <img src="./assets/img/gallery/gallery3.jpg" />
+            <img src="./img/gallery/gallery3.jpg" />
           </picture>
           <picture>
             <source
               media="(max-width: 1023px)"
-              srcset="./assets/img/gallery/gallery4.jpg"
+              srcset="./img/gallery/gallery4.jpg"
             />
             <source
               media="(min-width: 1024px)"
-              srcset="./assets/img/gallery/gallery4x2.jpg"
+              srcset="./img/gallery/gallery4x2.jpg"
             />
-            <img src="./assets/img/gallery/gallery4.jpg" />
+            <img src="./img/gallery/gallery4.jpg" />
           </picture>
           <picture>
             <source
               media="(max-width: 1023px)"
-              srcset="./assets/img/gallery/gallery5.jpg"
+              srcset="./img/gallery/gallery5.jpg"
             />
             <source
               media="(min-width: 1024px)"
-              srcset="./assets/img/gallery/gallery5x2.jpg"
+              srcset="./img/gallery/gallery5x2.jpg"
             />
-            <img src="./assets/img/gallery/gallery5.jpg" />
+            <img src="./img/gallery/gallery5.jpg" />
           </picture>
           <picture>
             <source
               media="(max-width: 1023px)"
-              srcset="./assets/img/gallery/gallery6.jpg"
+              srcset="./img/gallery/gallery6.jpg"
             />
             <source
               media="(min-width: 1024px)"
-              srcset="./assets/img/gallery/gallery6x2.jpg"
+              srcset="./img/gallery/gallery6x2.jpg"
             />
-            <img src="./assets/img/gallery/gallery6.jpg" />
+            <img src="./img/gallery/gallery6.jpg" />
           </picture>
         </div>
         <div class="epc_arrow epc_arrowLeft" id="epc_arrowLeft"><</div>
@@ -704,7 +828,45 @@
           </p>
         </div>
       </div>
+      <div class="epc_eventos">
+        <div class="epc_eventosInner">
+          <h2 class="epc_heading2 epc_mb48">
+            SI TIENES QUE CELEBRAR ALGÚN EVENTO PUEDES ESCRIBIRNOS A:
+          </h2>
+          <a href="eventosEN@elpatiodelacentral.es" class="epc_paragraph">
+            eventosEN@elpatiodelacentral.es
+          </a>
+        </div>
+      </div>
+      <div class="epc_localizacion">
+        <div class="epc_map"></div>
+        <address class="epc_address">
+          <h2 class="epc_heading2 epc_mb48-0">
+            ESTAMOS EN Calle Postigo de San Martín 8.
+          </h2>
+          <h2 class="epc_heading2 epc_mb48-0">en la central de callao.</h2>
+          <h2 class="epc_heading2 epc_mb48-0">en el patio :)</h2>
+        </address>
+      </div>
+      <a
+        href="https://www.instagram.com/elpatiodelacentral/"
+        class="epc_desktopInstagram epc_paragraph epc_clearfix"
+        >>>> y también en instagram <<<</a
+      >
     </main>
+    <footer class="epc_footer">
+      <a
+        href="https://www.instagram.com/elpatiodelacentral/"
+        class="epc_instagramFooter"
+      >
+        <img src="./img/logos/instagram.svg" alt=""
+      /></a>
+      <img
+        src="./img/logos/monogramaBlanco.svg"
+        alt=""
+        class="epc_monogramaBlanco"
+      />
+    </footer>
     <script>
       let slide = 1;
       window.setInterval(() => {
